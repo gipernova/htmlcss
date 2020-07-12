@@ -1,0 +1,9 @@
+.hero {
+  background: #D2B48C;
+  border: 1px solid red;
+  div style = "clear:both"
+}
+
+.left {
+  float: left;
+}

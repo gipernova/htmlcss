@@ -1,0 +1,36 @@
+body {
+  padding: 20px;
+}
+.bold {
+  font-weight: bolder;
+}
+li {
+  display: inline-block;
+  text-decoration: none;
+  border: solid 1px black;
+  margin: 2px;
+  width: 200px;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+/*1 способ*/
+ul {
+  list-style: none;
+  width: 100%;
+  text-align: justify;
+  padding: 0;
+}
+ul:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+/*2 способ*/
+/*ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}*/
+
+/*3 способ*/

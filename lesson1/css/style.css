@@ -1,0 +1,7 @@
+.col {
+  background: #f0f0f0; /* Цвет фона */
+  width: 230px; /* Ширина блока */
+  padding: 10px; /* Поля */
+  font-size: 1.5em; /* Размер шрифта */
+  word-wrap: normal; /* Перенос слов */
+}

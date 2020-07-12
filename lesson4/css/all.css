@@ -1,0 +1,217 @@
+.greenfield {
+  width: 700px;
+  height: 600px;
+  background: #0d5825;
+}
+.card {
+  bottom: 0;
+  position: relative;
+  width: 150px;
+  transition: bottom 0.5s ease;
+}
+.text {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;
+}
+.first {
+  position: relative;
+  transform: translate(200px, 150px) rotate(-25deg);
+}
+.second {
+  position: relative;
+  transform: translate(100px, 150px) rotate(-10deg);
+}
+.third {
+  position: relative;
+  transform: translate(1px, 173px) rotate(10deg);
+}
+.card:hover {
+  position: relative;
+  bottom: 20px;
+  cursor: pointer;
+}
+.tasktwo {
+  padding: 30px;
+  height: 500px;
+  width: 500px;
+}
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.pink {
+  background: rgb(250, 164, 178);
+  transform: translate(100px, 100px);
+}
+.blue {
+  background: rgb(76, 79, 246);
+  transform: translate(160px, 60px);
+  z-index: 1;
+}
+.green {
+  background: #1fee8d;
+  transform: translate(220px, 20px);
+}
+.thirdtask {
+  height: 600px;
+}
+a {
+  text-transform: uppercase;
+}
+li {
+  list-style: none;
+  font-size: 25px;
+  line-height: 50px;
+}
+li::before {
+  content: "\2666";
+  color: orange;
+}
+
+.menuhere {
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  transform: translate(160px, 400px) rotate(90deg);
+  opacity: 1;
+}
+.menuhere:hover {
+  cursor: default;
+}
+.menufull {
+  height: 100%;
+  width: 350px;
+  left: -320px;
+  background: gray;
+  transition: left 0.8s ease;
+  position: relative;
+}
+.menufull:hover {
+  position: relative;
+  left: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.6s ease;
+}
+a:hover {
+  color: orange;
+}
+a::before {
+  content: "  ";
+}
+.menufull:hover .menuhere {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.place {
+  width: 300px;
+  height: 300px;
+}
+.block100 {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: 10px;
+  animation: movements 4.5s ease 0s infinite normal both;
+}
+@keyframes movements {
+  0% {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+  25% {
+    top: 190px;
+    left: 0;
+    background: blue;
+  }
+  50% {
+    top: 190px;
+    left: 190px;
+    background: green;
+  }
+  75% {
+    top: 0;
+    left: 190px;
+    background: yellow;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+}
+.round {
+  height: 300px;
+  width: 300px;
+  background: rgb(86, 231, 212);
+  border-radius: 50%;
+  position: relative;
+}
+.eye1 {
+  height: 50px;
+  width: 50px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(70px, 70px);
+  display: inline-block;
+  animation: clapping 2s ease 2s infinite normal both;
+}
+.eye2 {
+  height: 50px;
+  width: 50px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(135px, 70px);
+  display: inline-block;
+  animation: clapping 2s ease 2s infinite normal both;
+}
+.nose {
+  height: 50px;
+  width: 50px;
+  background: white;
+  display: inline-block;
+  position: absolute;
+  top: 140px;
+  left: 125px;
+}
+.mouth {
+  height: 10px;
+  width: 100px;
+  background: white;
+  display: inline-block;
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  animation: smiling 3s ease 1s infinite normal both;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@keyframes clapping {
+  0% {
+    height: 50px;
+  }
+  50% {
+    height: 0px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+@keyframes smiling {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 150px;
+  }
+  100% {
+    width: 100px;
+  }
+}
